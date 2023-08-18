@@ -1,0 +1,76 @@
+
+Running experiment for random weight = 0.4.
+Executing init command: mvn compile com.google.cloud.tools:jib-maven-plugin:3.3.1:dockerBuild -Djib.to.image=localhost:32000/mtd-zk:registry -Djib.container.args=DistMtdTestSettings.yaml,3,0.4
+Executing init command: docker push localhost:32000/mtd-zk:registry
+Executing init command: microk8s kubectl apply -f /home/mcs21lgr/Distributed-MTD-with-K8s/MtdJava/src/main/resources/mtd-3-microk8s.yaml
+Capturing logs of mtd-zk-0
+Capturing logs of mtd-zk-1
+Capturing logs of mtd-zk-2
+Terminating experiment with random weight 0.4.
+Executing teardown command: microk8s kubectl delete -f /home/mcs21lgr/Distributed-MTD-with-K8s/MtdJava/src/main/resources/mtd-3-microk8s.yaml --wait=true
+Executing teardown command: microk8s kubectl delete deploy --all -n default --wait=true
+Executing teardown command: microk8s kubectl delete svc dist-mtd-lb-service -n default --wait=true
+Executing teardown command: microk8s kubectl wait --for=delete -f /home/mcs21lgr/Distributed-MTD-with-K8s/MtdJava/src/main/resources/mtd-3-microk8s.yaml --timeout=-1s
+Executing teardown command: microk8s kubectl wait --for=delete pod -n mtd --all --timeout=-1s
+Executing teardown command: microk8s kubectl wait --for=delete pod -n default --all --timeout=-1s
+Executing teardown command: microk8s kubectl wait --for=delete svc/dist-mtd-lb-service -n default --timeout=-1s
+Sanity check passed:
+Ensemble pods correctly report ensemble size 3 and random weight 0.4.
+3 processes were used to capture the pod logs.
+
+Running experiment for random weight = 0.7.
+Executing init command: mvn compile com.google.cloud.tools:jib-maven-plugin:3.3.1:dockerBuild -Djib.to.image=localhost:32000/mtd-zk:registry -Djib.container.args=DistMtdTestSettings.yaml,3,0.7
+Executing init command: docker push localhost:32000/mtd-zk:registry
+Executing init command: microk8s kubectl apply -f /home/mcs21lgr/Distributed-MTD-with-K8s/MtdJava/src/main/resources/mtd-3-microk8s.yaml
+Capturing logs of mtd-zk-0
+Capturing logs of mtd-zk-1
+Capturing logs of mtd-zk-2
+Terminating experiment with random weight 0.7.
+Executing teardown command: microk8s kubectl delete -f /home/mcs21lgr/Distributed-MTD-with-K8s/MtdJava/src/main/resources/mtd-3-microk8s.yaml --wait=true
+Executing teardown command: microk8s kubectl delete deploy --all -n default --wait=true
+Executing teardown command: microk8s kubectl delete svc dist-mtd-lb-service -n default --wait=true
+Executing teardown command: microk8s kubectl wait --for=delete -f /home/mcs21lgr/Distributed-MTD-with-K8s/MtdJava/src/main/resources/mtd-3-microk8s.yaml --timeout=-1s
+Executing teardown command: microk8s kubectl wait --for=delete pod -n mtd --all --timeout=-1s
+Executing teardown command: microk8s kubectl wait --for=delete pod -n default --all --timeout=-1s
+Executing teardown command: microk8s kubectl wait --for=delete svc/dist-mtd-lb-service -n default --timeout=-1s
+Sanity check passed:
+Ensemble pods correctly report ensemble size 3 and random weight 0.7.
+3 processes were used to capture the pod logs.
+
+Running experiment for random weight = 0.9.
+Executing init command: mvn compile com.google.cloud.tools:jib-maven-plugin:3.3.1:dockerBuild -Djib.to.image=localhost:32000/mtd-zk:registry -Djib.container.args=DistMtdTestSettings.yaml,3,0.9
+Executing init command: docker push localhost:32000/mtd-zk:registry
+Executing init command: microk8s kubectl apply -f /home/mcs21lgr/Distributed-MTD-with-K8s/MtdJava/src/main/resources/mtd-3-microk8s.yaml
+Capturing logs of mtd-zk-0
+Capturing logs of mtd-zk-1
+Capturing logs of mtd-zk-2
+Terminating experiment with random weight 0.9.
+Executing teardown command: microk8s kubectl delete -f /home/mcs21lgr/Distributed-MTD-with-K8s/MtdJava/src/main/resources/mtd-3-microk8s.yaml --wait=true
+Executing teardown command: microk8s kubectl delete deploy --all -n default --wait=true
+Executing teardown command: microk8s kubectl delete svc dist-mtd-lb-service -n default --wait=true
+Executing teardown command: microk8s kubectl wait --for=delete -f /home/mcs21lgr/Distributed-MTD-with-K8s/MtdJava/src/main/resources/mtd-3-microk8s.yaml --timeout=-1s
+Executing teardown command: microk8s kubectl wait --for=delete pod -n mtd --all --timeout=-1s
+Executing teardown command: microk8s kubectl wait --for=delete pod -n default --all --timeout=-1s
+Executing teardown command: microk8s kubectl wait --for=delete svc/dist-mtd-lb-service -n default --timeout=-1s
+Sanity check passed:
+Ensemble pods correctly report ensemble size 3 and random weight 0.9.
+3 processes were used to capture the pod logs.
+
+Running experiment for random weight = 1.0.
+Executing init command: mvn compile com.google.cloud.tools:jib-maven-plugin:3.3.1:dockerBuild -Djib.to.image=localhost:32000/mtd-zk:registry -Djib.container.args=DistMtdTestSettings.yaml,3,1.0
+Executing init command: docker push localhost:32000/mtd-zk:registry
+Executing init command: microk8s kubectl apply -f /home/mcs21lgr/Distributed-MTD-with-K8s/MtdJava/src/main/resources/mtd-3-microk8s.yaml
+Capturing logs of mtd-zk-0
+Capturing logs of mtd-zk-1
+Capturing logs of mtd-zk-2
+Terminating experiment with random weight 1.0.
+Executing teardown command: microk8s kubectl delete -f /home/mcs21lgr/Distributed-MTD-with-K8s/MtdJava/src/main/resources/mtd-3-microk8s.yaml --wait=true
+Executing teardown command: microk8s kubectl delete deploy --all -n default --wait=true
+Executing teardown command: microk8s kubectl delete svc dist-mtd-lb-service -n default --wait=true
+Executing teardown command: microk8s kubectl wait --for=delete -f /home/mcs21lgr/Distributed-MTD-with-K8s/MtdJava/src/main/resources/mtd-3-microk8s.yaml --timeout=-1s
+Executing teardown command: microk8s kubectl wait --for=delete pod -n mtd --all --timeout=-1s
+Executing teardown command: microk8s kubectl wait --for=delete pod -n default --all --timeout=-1s
+Executing teardown command: microk8s kubectl wait --for=delete svc/dist-mtd-lb-service -n default --timeout=-1s
+Sanity check passed:
+Ensemble pods correctly report ensemble size 3 and random weight 1.0.
+3 processes were used to capture the pod logs.

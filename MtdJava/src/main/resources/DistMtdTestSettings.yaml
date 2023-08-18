@@ -1,0 +1,7 @@
+name: "DistMtdTestSettings.yaml"
+serviceEnabled: true
+serviceFileName: "DistMtdTestService.yaml"
+deploymentFileNames:
+- "DistMtdDeploymentPrintNode.yaml"
+logToConsole: false
+logToFile: false
