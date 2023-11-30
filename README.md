@@ -2,7 +2,7 @@
 
 Author: Lucas Galery Käser
 
-Welcome to the repository containing the source code for my Master's thesis.
+Welcome to the repository containing the source code for my [Master's thesis](https://umu.diva-portal.org/smash/record.jsf?aq2=%5B%5B%5D%5D&c=71&af=%5B%5D&searchType=LIST_LATEST&sortOrder2=title_sort_asc&query=&language=en&pid=diva2%3A1808601&aq=%5B%5B%5D%5D&sf=all&aqe=%5B%5D&sortOrder=author_sort_asc&onlyFullText=false&noOfRows=50&dswid=-6899).
 
 In this thesis, I developed a distributed version of an existing coordinator for moving target defense (MTD) in Kubernetes.
 I extended [Philip Tibom and Max Buck's work](https://github.com/ptibom/Moving-Target-Defense-with-Kubernetes/), who developed the initial prototype for coordinating MTD in Kubernetes.
